@@ -1,10 +1,14 @@
 {
   "name": "@adearriba/cache.manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A client side page cache with Javascript. Inspired in: <https://github.com/highrisehq/snapback_cache>",
   "author": {
     "name": "adearriba",
     "url": "https://github.com/adearriba/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FikCode/js-cache-manager"
   },
   "type": "module",
   "dependencies": {
