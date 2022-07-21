@@ -1,14 +1,14 @@
-# CacheManager <!-- omit in toc -->
+# PageCacheManager <!-- omit in toc -->
 
 > Inspired in: [snapback_cache](https://github.com/highrisehq/snapback_cache "snapback_cache")
+
+One of the pain points of an `infinite scrolling` feed is maintaining the feed and scroll position when you are sent to a new page and click back to return to the feed. This little library wants to help you accomplish this easily.
 
 ## Table of Content <!-- omit in toc -->
 - [Manual build](#manual-build)
 - [Using NPM](#using-npm)
 - [Import library to your code](#import-library-to-your-code)
 - [How to use it](#how-to-use-it)
-
-One of the pain points of an infinite scrolling feed is maintaining the feed and scroll position when you are sent to a new page and click to return to the feed. This little library wants to help you accomplish this easily.
 
 ## Manual build
 

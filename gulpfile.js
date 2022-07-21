@@ -9,9 +9,9 @@ const rename = require('gulp-rename');
 const destFolder = './dist';
 const destNpmFolder = `${destFolder}/npm-package`;
 const srcInput = './src/**/*.js';
-const entryPoint = './src/CacheManager.js';
+const entryPoint = './src/PageCacheManager.js';
 
-const destfilename = 'CacheManager'
+const destfilename = 'PageCacheManager'
 const destFile = `${destFolder}/${destfilename}.js`;
 const packageJson = 'package.json';
 const readme = 'README.md';

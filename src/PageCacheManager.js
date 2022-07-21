@@ -5,7 +5,7 @@
  */
 import SessionStorageManager from "./SessionStorageManager.js";
 
-export default class CacheManager {
+export default class PageCacheManager {
     /**
      * 
      * @param {Object} options 
@@ -14,7 +14,7 @@ export default class CacheManager {
      * @param {function?} options.onCached Callback to execute when item is cached
      * @example 
      * var pageCache = SnapbackCache({ bodySelector: "#cache" })
-     * @returns {CacheManager} Returns a SnapbackCache object
+     * @returns {PageCacheManager} Returns a SnapbackCache object
      */
     constructor(options) {
         this.options = options || {};
