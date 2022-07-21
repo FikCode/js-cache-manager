@@ -18,7 +18,7 @@ npm install
 gulp build
 ```
 
-This will create a `/dist` folder with the final JS file `CacheManager.js` and `CacheManager.js.min`.
+This will create a `/dist` folder with the final JS file `PageCacheManager.js` and `PageCacheManager.js.min`.
 
 ## Using NPM
 
@@ -32,7 +32,7 @@ npm i @adearriba/cache.manager
 
 Library is using ES6 `export default` so you can import it to your code using:
 ```javascript
-import CacheManager from "./CacheManager.js";
+import PageCacheManager from "./PageCacheManager.js";
 ```
 
 ## How to use it
@@ -56,7 +56,7 @@ let cacheManagerOptions = {
 	onCached: onCached, //Optional. Callback to execute when item is cached
 };
 
-let cacheManager = new CacheManager(cacheManagerOptions);
+let pageCacheManager = new PageCacheManager(cacheManagerOptions);
 ```
 
 3. Decide when you want to cache
@@ -64,7 +64,7 @@ For example, let's cache when the person clicks a product card.
 
 ```javascript
 document.querySelector('#product').addEventListener('click', function(e){
-	cacheManager.cachePage();
+	pageCacheManager.cachePage();
 });
 ```
 
