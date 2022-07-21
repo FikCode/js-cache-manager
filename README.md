@@ -32,7 +32,7 @@ npm i @adearriba/cache.manager
 
 Library is using ES6 `export default` so you can import it to your code using:
 ```javascript
-import PageCacheManager from "./PageCacheManager.js";
+import {PageCacheManager} from "./PageCacheManager";
 ```
 
 ## How to use it

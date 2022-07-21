@@ -1,4 +1,4 @@
-export default class SessionStorageManager 
+export class SessionStorageManager 
 {
     /**
      * @param {Object?} options options 

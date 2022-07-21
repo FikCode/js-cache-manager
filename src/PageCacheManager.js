@@ -3,15 +3,17 @@
  * @copyright Inspired in: <https://github.com/highrisehq/snapback_cache>
  * @description A client side page cache with Javascript.
  */
-import SessionStorageManager from "./SessionStorageManager.js";
+import {SessionStorageManager} from "./SessionStorageManager";
 
-export default class PageCacheManager {
+export class PageCacheManager {
     /**
      * 
      * @param {Object} options 
      * @param {string} options.bodySelector Element to be cached and position saved
      * @param {function?} options.onLoaded Callback to execute when cache is loaded
      * @param {function?} options.onCached Callback to execute when item is cached
+     * @param {number?} options.maxCacheItems Max number of items to cache
+     * @param {string?} options.cacheNamespace Namespace for Cache items
      * @example 
      * var pageCache = SnapbackCache({ bodySelector: "#cache" })
      * @returns {PageCacheManager} Returns a SnapbackCache object
@@ -20,7 +22,12 @@ export default class PageCacheManager {
         this.options = options || {};
         this.enabled = true;
 
-        this.sessionStorageManager = new SessionStorageManager();
+        debugger;
+        const sessionStorageOptions = {
+            namespace: options.cacheNamespace,
+            maxCacheItems: options.maxCacheItems,
+        }
+        this.sessionStorageManager = new SessionStorageManager(sessionStorageOptions);
         this.cacheElement = document.querySelector(this.options.bodySelector);
 
         if (options.onLoaded)
