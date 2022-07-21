@@ -22,7 +22,6 @@ export class PageCacheManager {
         this.options = options || {};
         this.enabled = true;
 
-        debugger;
         const sessionStorageOptions = {
             namespace: options.cacheNamespace,
             maxCacheItems: options.maxCacheItems,
