@@ -118,6 +118,8 @@ export class PageCacheManager {
             return;
         }
 
+        this.cacheElement = document.querySelector(this.options.bodySelector);
+        
         var cachedPage = {
             body: this.cacheElement.innerHTML,
             title: document.title,
